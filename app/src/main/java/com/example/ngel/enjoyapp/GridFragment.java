@@ -2,12 +2,14 @@ package com.example.ngel.enjoyapp;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.preference.PreferenceManager;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -29,7 +31,7 @@ public class GridFragment extends Fragment  implements SensorEventListener {
 
     private static final String TAG = ".GridFragment";
     private SensorManager mSensorManager;
-
+    private SharedPreferences prefs;
     private GridView gridView;
     private GridAdapter gridAdapter;
     private ArrayList<ElementoGrid> items;
@@ -45,11 +47,13 @@ public class GridFragment extends Fragment  implements SensorEventListener {
 
         View view = inflater.inflate(R.layout.frangment_grid,
                 container, false);
+        prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
 
         Log.d(TAG,"onCreate");
 
         //rellenamos el array con objetos de tipo ElementoGrid
-        this.rellenarArray("tip1_");
+        String tipoIconos = prefs.getString("prefSyncFrequency", "NULL");
+        this.rellenarArray(tipoIconos);
 
         // creamos el listado GRID
         gridAdapter = new GridAdapter(GridFragment.this.getActivity(), items);
@@ -106,7 +110,7 @@ public class GridFragment extends Fragment  implements SensorEventListener {
         if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
             float values[] = event.values;
             float y= values[1];
-            if (y < -15){ //movil hacia abajo
+            if (y < -19){ //movil hacia abajo
                 System.out.println("Hola");
                 Vibrator v = (Vibrator) getActivity().getSystemService(VIBRATOR_SERVICE);
                 v.vibrate(1000);

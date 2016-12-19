@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="1"
+        android:background="@android:color/black">
+
+        <TextView
+            android:id="@+id/introJuego"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/entendido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entendido"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+
+    </LinearLayout>
+

@@ -4,8 +4,8 @@
     android:layout_height="match_parent">
     <!--SE AÑADE EL FRAGMENT DE FORMA ESTÁTICA-->
     <fragment
-        android:id="@+id/fragment_grid"
-        android:name="com.example.ngel.enjoyapp.GridFragment"
+        android:id="@+id/fragment_intro"
+        android:name="com.example.ngel.enjoyapp.IntroFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </RelativeLayout>
