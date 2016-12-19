@@ -89,7 +89,7 @@ public class GridFragment extends Fragment  implements SensorEventListener {
 
                 do{
                     rnd1 = new Random();
-                    rndInt = rnd1.nextInt(20)+1; //NUMERO ALEATORIO DEL 0 AL 20
+                    rndInt = rnd1.nextInt(24)+1; //NUMERO ALEATORIO DEL 0 AL 20
                     nombreImg_= tipoImagen+rndInt; //NOMBRE DEL RECURSO IMAGEN CON EL Nº ALEATORIO
                     idImg_ = getResources().getIdentifier(nombreImg_,"drawable",GridFragment.this.getActivity().getPackageName()); //obteniendo el id de la imagen
                     /*if ( items.size()> 0 ) {

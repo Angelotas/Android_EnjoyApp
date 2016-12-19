@@ -16,8 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".GridActivity"/>
-
-        <activity android:name=".SettingsActivity" android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".SettingsActivity" android:theme="@style/Theme.AppCompat.DayNight"/>
     </application>
 
 </manifest>
