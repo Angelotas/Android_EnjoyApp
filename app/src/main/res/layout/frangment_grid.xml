@@ -15,8 +15,6 @@
         android:padding="15dp"
         android:columnWidth="60dp"
         android:numColumns="auto_fit"
-
-
         android:textAlignment="center" />
 
 </LinearLayout>

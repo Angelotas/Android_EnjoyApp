@@ -1,27 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
-        android:gravity="center"
+        android:gravity="start"
         android:weightSum="1"
-        android:background="@android:color/black">
+        android:background="@android:color/black"
+        tools:gravity="top|center"
+        android:scrollbars="vertical">
 
         <TextView
             android:id="@+id/introJuego"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"/>
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="15dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="#232323"
+            android:textAlignment="center"
+            android:text="@string/introTitle"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="@android:color/background_dark"
+            android:shadowDx="5" android:shadowDy="3" android:shadowRadius="1.8"/>
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="15dp"
+            android:textSize="18dp"
+            android:background="#232323"
+            android:text="@string/introContent"
+            android:textColor="@android:color/background_light" />
 
         <Button
             android:id="@+id/entendido"
+            android:paddingLeft="3dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableRight="@drawable/flechaicono"
+            android:textColor="#232323"
+            android:textSize="30dp"
             android:text="Entendido"
-            style="@style/Widget.AppCompat.Button.Colored" />
+            android:background="@drawable/boton_redondo" />
 
 
-    </LinearLayout>
+</LinearLayout>
 

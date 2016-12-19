@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@android:color/darker_gray">
+    android:background="#232323">
 
     <TextView
         android:id="@+id/idItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@+id/label"
-        android:layout_marginTop="1px"
-        android:layout_marginBottom="0px"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:gravity="center">
     </TextView>
@@ -20,7 +21,8 @@
         android:id="@+id/imageIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="10px">
+
+        android:layout_marginTop="0dp">
     </ImageView>
 
-</FrameLayout>
+</RelativeLayout>

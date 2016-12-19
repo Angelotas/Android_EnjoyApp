@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">EnjoyApp</string>
+    <string name="introTitle">Intrucciones para jugar</string>
+    <string name="introContent">1º- Piensa un número de 10 al 99 \r\n\r\n
+        2º- Suma su primera cifra mas su segunda\r\n\r\n
+        3º- Resta al número inicial la suma obtenida\r\n\r\n
+        \r\t\r\t Ejemplo: 34=> 3+4=7 | 34-7=27 \r\n\r\n
+        4º- Cuando tengas el resultado final agita el movil para ver el resultado
+    </string>
 </resources>
