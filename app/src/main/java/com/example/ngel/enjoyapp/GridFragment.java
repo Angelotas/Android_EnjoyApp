@@ -2,6 +2,7 @@ package com.example.ngel.enjoyapp;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -52,7 +53,7 @@ public class GridFragment extends Fragment  implements SensorEventListener {
         Log.d(TAG,"onCreate");
 
         //rellenamos el array con objetos de tipo ElementoGrid
-        String tipoIconos = prefs.getString("prefSyncFrequency", "NULL");
+        String tipoIconos = prefs.getString("prefSyncFrequency", "tip1_");
         this.rellenarArray(tipoIconos);
 
         // creamos el listado GRID
@@ -92,10 +93,7 @@ public class GridFragment extends Fragment  implements SensorEventListener {
                     rndInt = rnd1.nextInt(24)+1; //NUMERO ALEATORIO DEL 0 AL 20
                     nombreImg_= tipoImagen+rndInt; //NOMBRE DEL RECURSO IMAGEN CON EL Nº ALEATORIO
                     idImg_ = getResources().getIdentifier(nombreImg_,"drawable",GridFragment.this.getActivity().getPackageName()); //obteniendo el id de la imagen
-                    /*if ( items.size()> 0 ) {
-                        System.out.println("La imagen de antes "+items.get(i-2).getIdImagen()); //el idImagen del anterior
-                        System.out.println(i + " de la imagen de ahora " + idImg_);
-                    }*/
+
                     Log.d(TAG,"Entra");
                 }
                 while (((items.size() >= 1) && (items.get(i-2).getIdImagen() == idImg_)) || (idImg_==idImgOK));
@@ -103,6 +101,7 @@ public class GridFragment extends Fragment  implements SensorEventListener {
                 items.add(new ElementoGrid(i,idImg_));
             }
         }
+        System.out.println("Para ver si el 9 es: "+items.get(9).getIdImagen());
     }
 
     @Override
@@ -114,9 +113,18 @@ public class GridFragment extends Fragment  implements SensorEventListener {
                 System.out.println("Hola");
                 Vibrator v = (Vibrator) getActivity().getSystemService(VIBRATOR_SERVICE);
                 v.vibrate(1000);
+                fade(this.gridView);
             }
 
         }
+    }
+
+    public void fade(View button) { //Para la transición con el siguiente actívity
+        Intent intent= new Intent(getActivity(),Result1Activity.class);
+        intent.putExtra("iconoResultado",nombreImgOK); //se envia el nombre de la imagen
+
+        startActivity(intent);
+        getActivity().overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     }
 
     @Override
