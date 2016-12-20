@@ -37,6 +37,7 @@ public class GridFragment extends Fragment  implements SensorEventListener {
     private GridAdapter gridAdapter;
     private ArrayList<ElementoGrid> items;
 
+    boolean movimiento=false;
     Random rnd1;  //random para casos normales que no sean multiplos de 9
     Random rnd2; //random para todos los valores que sean múltipos de 9
     int rndInt; //numero aleatorio del 0 al 20
@@ -106,16 +107,16 @@ public class GridFragment extends Fragment  implements SensorEventListener {
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+        if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER && movimiento == false) {
             float values[] = event.values;
             float y= values[1];
             if (y < -19){ //movil hacia abajo
+                movimiento=true;
                 System.out.println("Hola");
                 Vibrator v = (Vibrator) getActivity().getSystemService(VIBRATOR_SERVICE);
                 v.vibrate(1000);
-                fade(this.gridView);
+                fade(this.gridView); //transicion desvanecimiento
             }
-
         }
     }
 
