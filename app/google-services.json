@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "361519421969",
+    "firebase_url": "https://enjoyapp-eb3ed.firebaseio.com",
+    "project_id": "enjoyapp-eb3ed",
+    "storage_bucket": "enjoyapp-eb3ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361519421969:android:51adb9b98ceab671",
+        "android_client_info": {
+          "package_name": "con.example.ngel.enjoyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361519421969-9l8tf7m2aqhkefru4u3v59j8bqlb6p5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADijJCMrrDbh0oOn863TeKNzOh90wAxII"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361519421969:android:f47244ed286e5687",
+        "android_client_info": {
+          "package_name": "com.example.ngel.enjoyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361519421969-9l8tf7m2aqhkefru4u3v59j8bqlb6p5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADijJCMrrDbh0oOn863TeKNzOh90wAxII"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

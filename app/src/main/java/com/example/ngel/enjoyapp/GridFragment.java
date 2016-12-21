@@ -79,7 +79,7 @@ public class GridFragment extends Fragment  implements SensorEventListener {
         //creamos nuestra coleccion de datos
         items = new ArrayList<>();
         rnd2 = new Random();
-        rndInt =rnd2.nextInt(20)+1;
+        rndInt =rnd2.nextInt(24)+1;
         nombreImgOK=tipoImagen+rndInt;
         idImgOK= getResources().getIdentifier(nombreImgOK,"drawable",GridFragment.this.getActivity().getPackageName()); //obteniendo el id de la imagen
         for (int i=1; i<=100;i++){
@@ -112,7 +112,6 @@ public class GridFragment extends Fragment  implements SensorEventListener {
             float y= values[1];
             if (y < -19){ //movil hacia abajo
                 movimiento=true;
-                System.out.println("Hola");
                 Vibrator v = (Vibrator) getActivity().getSystemService(VIBRATOR_SERVICE);
                 v.vibrate(1000);
                 fade(this.gridView); //transicion desvanecimiento

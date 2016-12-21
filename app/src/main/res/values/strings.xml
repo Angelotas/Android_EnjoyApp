@@ -7,4 +7,9 @@
         \r\t\r\t Ejemplo: 34=> 3+4=7 | 34-7=27 \r\n\r\n
         4º- Cuando tengas el resultado final agita el movil para ver el resultado
     </string>
+    <string name="tituloResult">¿Esta era tu imagen?</string>
+    <string name="botonjugardeNuevo">Jugar de nuevo</string>
+    <string name="botonInicio">Inicio</string>
+    <string name="botonCompartir">Compartir</string>
+    <string name="labelMagia">Magia</string>
 </resources>
