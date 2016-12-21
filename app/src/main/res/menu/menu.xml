@@ -5,7 +5,7 @@
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         app:showAsAction="never"
-        android:title="Preferencias" />
+        android:title="@string/Preferencias" />
 
 
 </menu>

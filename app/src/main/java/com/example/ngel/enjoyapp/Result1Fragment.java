@@ -58,10 +58,9 @@ public class Result1Fragment extends Fragment{
 
                 share.putExtra(Intent.EXTRA_STREAM,
                         Uri.parse("android.resource://com.example.ngel.enjoyapp/drawable/"+nombreImagen));
-                share.putExtra(Intent.EXTRA_TEXT,
-                        "Te recomiendo que te descargues EnjoyApp, el juego Magia te leerá la mente.");
+                share.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.textoCompartir));
 
-                startActivity(Intent.createChooser(share, "Compartir resultado"));
+                startActivity(Intent.createChooser(share, getResources().getString(R.string.labelCompartir)));
             }
         });
 

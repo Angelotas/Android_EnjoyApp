@@ -57,7 +57,7 @@
             android:drawableRight="@drawable/flechaicono"
             android:textColor="#232323"
             android:textSize="30dp"
-            android:text="Entendido"
+            android:text="@string/botonEntendido"
             android:background="@drawable/boton_redondo" />
 
 

@@ -12,4 +12,13 @@
     <string name="botonInicio">Inicio</string>
     <string name="botonCompartir">Compartir</string>
     <string name="labelMagia">Magia</string>
+    <string name="botonEntendido">Entendido</string>
+    <string name="Preferencias">Preferencias</string>
+    <string name="tipIconos">Tipo de Iconos</string>
+    <string name="emoObj">Emoticono Objeto</string>
+    <string name="emoCara">Emoticono Cara</string>
+    <string name="emoAnimal">Emoticono Animal</string>
+    <string name="emoComida">Emoticono Comida</string>
+    <string name="textoCompartir">Te recomiendo que te descargues EnjoyApp, el juego Magia te leerá la mente.</string>
+    <string name="labelCompartir">Compartir</string>
 </resources>

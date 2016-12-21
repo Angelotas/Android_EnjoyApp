@@ -2,9 +2,9 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ListPreference
-        android:key="prefSyncFrequency"
+        android:key="prefIcons"
         android:entries="@array/listaIconos"
         android:entryValues="@array/valoresIconos"
-        android:title="Tipo de iconos" />
+        android:title="@string/tipIconos" />
 
 </PreferenceScreen>

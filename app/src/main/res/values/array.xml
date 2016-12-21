@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="listaIconos">
-        <item name="tip1_">Tipo iconos 1</item>
-        <item name="tip2_">Tipo iconos 2</item>
-        <item name="tip3_">Tipo iconos 3</item>
+        <item name="tip1_">@string/emoObj</item>
+        <item name="tip2_">@string/emoCara</item>
+        <item name="tip3_">@string/emoAnimal</item>
+        <item name="tip4_">@string/emoComida</item>
     </string-array>
     <string-array name="valoresIconos">
         <item name="tip1_">tip1_</item>
         <item name="tip2_">tip2_</item>
         <item name="tip3_">tip3_</item>
+        <item name="tip_4">tip4_</item>
     </string-array>
+
 </resources>

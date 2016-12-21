@@ -54,7 +54,7 @@ public class GridFragment extends Fragment  implements SensorEventListener {
         Log.d(TAG,"onCreate");
 
         //rellenamos el array con objetos de tipo ElementoGrid
-        String tipoIconos = prefs.getString("prefSyncFrequency", "tip1_");
+        String tipoIconos = prefs.getString("prefIcons", "tip1_");
         this.rellenarArray(tipoIconos);
 
         // creamos el listado GRID
