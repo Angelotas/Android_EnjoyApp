@@ -15,4 +15,7 @@ public class GridActivity extends Activity {
         setContentView(R.layout.activity_grid);
     }
 
+    @Override
+    public void onBackPressed() {} //para que no pueda regresar al activity anterior
+
 }

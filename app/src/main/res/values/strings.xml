@@ -5,7 +5,7 @@
         2º- Suma su primera cifra mas su segunda\r\n\r\n
         3º- Resta al número inicial la suma obtenida\r\n\r\n
         \r\t\r\t Ejemplo: 34=> 3+4=7 | 34-7=27 \r\n\r\n
-        4º- Cuando tengas el resultado final agita el movil para ver el resultado
+        4º- Cuando tengas el resultado final, memorízalo y pulsa ENTENDIDO
     </string>
     <string name="tituloResult">¿Esta era tu imagen?</string>
     <string name="botonjugardeNuevo">Jugar de nuevo</string>
@@ -21,4 +21,6 @@
     <string name="emoComida">Emoticono Comida</string>
     <string name="textoCompartir">Te recomiendo que te descargues EnjoyApp, el juego Magia te leerá la mente.</string>
     <string name="labelCompartir">Compartir</string>
+    <string name="textoGrid">Encuentra la imagen que corresponde con tu resultado y agita el teléfono</string>
+    <string name="textoGridAgita">¡Agita el teléfono!</string>
 </resources>

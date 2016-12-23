@@ -18,8 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GridActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-        <activity android:name=".SettingsActivity" android:theme="@style/Theme.AppCompat.DayNight"/>
+        <activity android:name=".GridActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SettingsActivity"
+            android:theme="@style/Theme.AppCompat.DayNight"/>
         <activity android:name=".Result1Activity"
             android:label="@string/labelMagia"
             android:screenOrientation="portrait"/>
